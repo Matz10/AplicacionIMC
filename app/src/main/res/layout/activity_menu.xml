@@ -1,33 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app=""
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <Button
+        android:text="IMC Calculator"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonIMC"
+        android:onClick="openCalculator"/>
 
-        <Button
-            android:text="IMC Calculator"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonCalculator"
-            android:elevation="0dp"
-            style="@style/Widget.AppCompat.Button" />
+    <Button
+        android:text="Help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonHelp"
+        android:onClick="openHelp"/>
 
-        <Button
-            android:text="Help"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonHelp"
-            android:visibility="visible" />
-
-        <Button
-            android:text="About"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonAbout" />
-    </LinearLayout>
+    <Button
+        android:text="About"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAbout"
+        android:onClick="openAbout"/>
 </LinearLayout>

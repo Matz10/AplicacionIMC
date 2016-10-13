@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="Weight"
+        android:text="Weight (m)"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
@@ -15,7 +15,7 @@
         android:layout_alignStart="@+id/textHeight" />
 
     <TextView
-        android:text="Height"
+        android:text="Height (Kg)"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="47dp"
@@ -37,16 +37,6 @@
         android:layout_alignLeft="@+id/textView3"
         android:layout_alignStart="@+id/textView3" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/textWeight"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,7 +44,8 @@
         android:id="@+id/buttonIMC"
         android:layout_below="@+id/textWeight"
         android:layout_centerHorizontal="true"
-        android:text="Calculate IMC" />
+        android:text="Calculate IMC"
+        android:onClick="calculo" />
 
     <TextView
         android:text="Result"
@@ -67,7 +58,6 @@
         android:id="@+id/textResult" />
 
     <TextView
-        android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textResult"
@@ -75,5 +65,15 @@
         android:layout_alignStart="@+id/textResult"
         android:layout_marginTop="37dp"
         android:id="@+id/textResultIMC" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/textWeight"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
 
 </RelativeLayout>
